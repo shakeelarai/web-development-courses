@@ -1,0 +1,100 @@
+/* Registration Form Styles */
+#apldg-registration-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    z-index: 1000;
+    max-width: 900px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#apldg-registration-form .form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#apldg-registration-form .form-header h3 {
+    color: #7450f7;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#apldg-registration-form .form-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+#apldg-registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+#apldg-registration-form input[type="text"],
+#apldg-registration-form input[type="email"],
+#apldg-registration-form input[type="tel"],
+#apldg-registration-form select,
+#apldg-registration-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+#apldg-registration-form input:focus,
+#apldg-registration-form select:focus,
+#apldg-registration-form textarea:focus {
+    border-color: #7450f7;
+    box-shadow: 0 0 0 3px rgba(116, 80, 247, 0.1);
+    outline: none;
+}
+
+#apldg-registration-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#apldg-registration-form button[type="submit"] {
+    margin-top: 20px;
+    padding: 8px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #7450f7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    line-height: 1.4;
+}
+
+#apldg-registration-form button[type="submit"]:hover {
+    background-color: #5c35f7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(116, 80, 247, 0.2);
+}
+
+.form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.form-overlay.show {
+    display: block;
+}
